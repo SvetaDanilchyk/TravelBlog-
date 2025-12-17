@@ -1,0 +1,188 @@
+/* header-top */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/top-section/woman-traveler-with-backpack-walking-yasaka-pagoda-sannen-zaka-street-kyoto-japan\ 1.png")
+    center / cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.header__logo {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0px;
+  font-weight: 700;
+  color: var(--white);
+}
+.header__logo-text {
+  display: inline-block;
+  font-size: 36px;
+}
+
+.--accent {
+  color: var(--text-color-main);
+}
+
+.header__search {
+  display: flex;
+  width: 554px;
+  position: relative;
+}
+
+input[type="search"] {
+  align-self: center;
+  width: 100%;
+  height: 53px;
+  border: 2px solid #868383;
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 15px;
+  font-weight: 300;
+  font-size: 18px;
+  background-image: url("../img/icons/loupa.svg");
+  background-position: 12px 15px;
+  background-repeat: no-repeat;
+}
+
+/*
+убрать крестик очистки
+ input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	-webkit-appearance:none;
+} */
+
+.header__search-loupa {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  padding-left: 24px;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+}
+
+.icon__bg {
+  fill: #ffffff;
+  transition: fill 0.3s;
+}
+
+.icon__shape {
+  fill: #696969;
+  transition: fill 0.3s;
+}
+
+.header__sociamedia {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__sociamedia-url:hover .icon__bg {
+  fill: #ffa902;
+}
+
+.header__sociamedia-url:hover .icon__shape {
+  fill: #ffffff;
+}
+
+hr {
+  opacity: 0.6;
+}
+.header__nav {
+  max-width: 789px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-item {
+  list-style-type: none;
+  position: relative;
+  font-size: 20px;
+}
+
+.header__menu-item a {
+  color: var(--white);
+  text-decoration: none;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #696969;
+}
+
+.header__menu-item a:hover .submenu {
+  color: #ffa902;
+  display: block;
+}
+
+
+/* 
+li > ul {
+  display: none;
+} */
+
+.header__descr {
+  color: #ffffff;
+  margin-top: 224px;
+}
+
+.header__title {
+  display: flex;
+  font-weight: 600;
+  font-size: 75px;
+  justify-content: center;
+}
+
+.header__text {
+  margin: 0 auto;
+  margin-top: 28px;
+  font-size: 16px;  
+  max-width: 865px;
+  text-align: center;
+}
+
+.header__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffa902;
+}
+/*
+
+
+
+
+.header__text {
+}
+
+
+ */

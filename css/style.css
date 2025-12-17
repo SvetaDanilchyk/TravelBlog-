@@ -1,0 +1,31 @@
+@import url("../fonts/fonts.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css");
+@import url("./hero.css");
+@import url("./categories.css");
+
+:root {
+  --white: white;
+  --text-color-main: #ffa902;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* .container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+} */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+}
