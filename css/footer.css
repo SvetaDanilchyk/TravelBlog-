@@ -1,0 +1,7 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #ffa902;
+  margin-top: 100px;
+  height: 144px;
+}

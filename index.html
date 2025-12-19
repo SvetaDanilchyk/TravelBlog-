@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section class="hero">
+    <!-- header -->
+    <header class="header">
       <div class="container">
-        <header class="header">
+        <div class="header__top">
           <a href="#" class="header__logo">
             <span class="header__logo-text --accent">Galli</span>
             <span class="header__logo-text">vant</span>
@@ -23,8 +24,14 @@
             />
           </form>
 
-          <div class="header__sociamedia">
-            <a href="#" class="header__sociamedia-url" aria-label="Facebook">
+          <ul class="menu__hamburger">
+            <li class="menu__hamburger-item"></li>
+            <li class="menu__hamburger-item"></li>
+            <li class="menu__hamburger-item"></li>
+          </ul>
+
+          <!--  <div class="social">
+            <a href="#" class="social__link" aria-label="Facebook">
               <svg class="icon" viewBox="0 0 56 56">
                 <circle class="icon__bg" cx="28" cy="27" r="18" />
                 <path
@@ -34,7 +41,7 @@
               </svg>
             </a>
 
-            <a href="#" class="header__sociamedia-url" aria-label="Twitter">
+            <a href="#" class="social__link" aria-label="Twitter">
               <svg class="icon" viewBox="0 0 56 56">
                 <circle class="icon__bg" cx="28" cy="27" r="18" />
                 <path
@@ -47,7 +54,7 @@
               </svg>
             </a>
 
-            <a href="#" class="header__sociamedia-url" aria-label="Instagram">
+            <a href="#" class="social__link" aria-label="Instagram">
               <svg class="icon" viewBox="0 0 56 56">
                 <circle class="icon__bg" cx="28" cy="27" r="18" />
                 <path
@@ -60,7 +67,7 @@
               </svg>
             </a>
 
-            <a href="#" class="header__sociamedia-url" aria-label="Youtobe">
+            <a href="#" class="social__link" aria-label="Youtobe">
               <svg class="icon" viewBox="0 0 56 56">
                 <circle class="icon__bg" cx="28" cy="27" r="18" />
                 <g clip-path="url(#b)">
@@ -71,8 +78,8 @@
                 </g>
               </svg>
             </a>
-          </div>
-        </header>
+          </div> -->
+        </div>
 
         <hr />
 
@@ -92,76 +99,408 @@
           </ul>
         </nav>
 
-        <section class="header__descr">
-          <h1 class="header__title">Where will you go next?</h1>
-          <p class="header__text">
+        <div class="hero">
+          <h1 class="hero__title">Where will you go next?</h1>
+          <p class="hero__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed et
             donec purus viverra. Sit justo velit, eu sed sollicitudin tempus,
             risus. Sed sit elit mauris adipiscing. Lobortis pellentesque nulla
             accumsan id urna, ullamcorper gravida varius. Massa mauris, cursus
             orci magna non enim fames et sed.
           </p>
-          <p class="header__cta">Let’s Go.....</p>
+          <a class="hero__cta" href="#">Let’s Go.....</a>
           <!-- призыв к действию Call To Action -->
-        </section>
-      </div>
-    </section>
-
-    <main>
-      <section class="categories">
-        <h2 class="section-title">Choose a category</h2>
-        <div>
-          <svg><svg/> 
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <svg><svg/> 
         </div>
-      </section>
+      </div>
+    </header>
+
+    <!-- Choose a category -->
+    <main class="categories">
+      <div class="container">
+        <h2 class="section-title">Choose a category</h2>
+
+        <div class="slider">
+          <div class="slider__arrow-prev" data-slide="prev">
+            <svg
+              width="42"
+              height="41"
+              viewBox="0 0 42 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.889 17.5098H41.3333V22.6765H9.889L23.746 36.5335L20.0932 40.1863L0 20.0932L20.0932 0L23.746 3.65283L9.889 17.5098Z"
+                fill="#868383"
+              />
+            </svg>
+          </div>
+
+          <div class="slider__item">
+            <img
+              src="./img/categories/jungal.jpg"
+              class="slider__item-img"
+              alt="jungal"
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              src="./img/categories/mount.jpg"
+              class="slider__item-img"
+              alt="mount"
+            />
+          </div>
+
+          <div class="slider__arrow-next" data-slide="next">
+            <svg
+              width="42"
+              height="41"
+              viewBox="0 0 42 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M31.4443 22.6764L-1.75427e-05 22.6764L-1.7091e-05 17.5098L31.4443 17.5098L17.5873 3.65278L21.2402 -4.7533e-05L41.3333 20.0931L21.2401 40.1863L17.5873 36.5334L31.4443 22.6764Z"
+                fill="#141414"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- featured -->
+    <section class="featured">
+      <div class="container">
+        <h2 class="section-title">Featured explore</h2>
+        <div class="featured__list">
+          <article class="post-card">
+            <div class="post-card__image">
+              <img src="./img/featured-posts/img-1.jpg" alt="" />
+            </div>
+            <h3 class="post-card__title">
+              The Golden Sands of Florida and clifornia
+            </h3>
+            <p class="post-card__excerpt">
+              Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+              donec purus viverra. Sit justo velit, eu sed
+            </p>
+            <div class="post-card__meta">
+              <a href="">Solo Travel</a>
+              <span>By</span>
+              <span> Adam Smith</span>
+            </div>
+          </article>
+        </div>
 
-    <section class="featured-posts">
-      <h2 class="section-title">Featured explore</h2>
-      <article class="post">...</article>
-      <article class="post">...</article>
-      <article class="post">...</article>
-      <article class="post">...</article>
-      <article class="post">...</article>
-      <article class="post">...</article>
+        <div class="number">
+          <span>1</span><span>2</span><span>3</span><svg>></svg>
+          <svg></svg>
+        </div>
+      </div>
     </section>
 
-    <!-- section-title -->
-    <section class="latest-posts">
-      <h2 class="section-title">My latest blog</h2>
-      <div>
-        <article class="post">...</article>
-        <article class="post">...</article>
-        <article class="post">...</article>
-        <article class="post">...</article>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- My latest blog -->
+    <section>
+      <div class="container">
+        <h2 class="section-title">My latest blog</h2>
+        <div class="latest-posts">
+          <article class="post-card">
+            <div class="post-card__image">
+              <img src="./img/featured-posts/img-3.jpg" alt="" />
+            </div>
+            <h3 class="post-card__title">
+              The Golden Sands of Florida and clifornia
+            </h3>
+
+            <div class="post-card__meta">
+              <a href="">Solo Travel</a>
+              <span>By</span>
+              <span> Adam Smith</span>
+            </div>
+
+            <div class="post-card__data">
+              <span>10 Nov, 2020 ----- 50 comment</span>
+            </div>
+
+            <p class="post-card__excerpt">
+              Lorem ipsum dolor sit amet, con turadip iscingelit. In sed et
+              donec purus viverra. Sit justo velit, eu sed
+            </p>
+
+            <span>Read More ......</span>
+          </article>
+
+          <aside class="blog-sidebar">
+            <article class="post-card --wrap">
+              <h3 class="post-card__title">Popular post</h3>
+
+              <div class="--blog">
+                <div class="post-card__image">
+                  <img src="./img/featured-posts/img-5.jpg" alt="" />
+                </div>
+
+                <div class="post-card__descr">
+                  <h3 class="post-card__title">
+                    The Golden Sands of Florida and clifornia
+                  </h3>
+
+                  <div class="post-card__meta">
+                    <a href="">Solo Travel</a>
+                    <span>By</span>
+                    <span> Adam Smith</span>
+                  </div>
+
+                  <div class="post-card__data">
+                    <span>10 Nov, 2020 ----- 50 comment</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <div class="latest-posts__social --wrap">
+              <h3 class="post-card__title">Follow Me</h3>
+              <div class="social --social-aside">
+                <a href="#" class="social__link" aria-label="Facebook">
+                  <svg class="icon" viewBox="0 0 56 56">
+                    <circle
+                      class="icon__bg --social-shadow"
+                      cx="28"
+                      cy="27"
+                      r="18"
+                    />
+                    <path
+                      class="icon__shape"
+                      d="M29.917 28.125h1.77l.709-3h-2.48v-1.5c0-.773 0-1.5 1.417-1.5h1.063v-2.52a18.866 18.866 0 0 0-2.024-.105c-1.923 0-3.289 1.243-3.289 3.525v2.1h-2.125v3h2.125V34.5h2.834v-6.375Z"
+                    />
+                  </svg>
+                </a>
+
+                <a href="#" class="social__link" aria-label="Twitter">
+                  <svg class="icon" viewBox="0 0 56 56">
+                    <circle
+                      class="icon__bg --social-shadow"
+                      cx="28"
+                      cy="27"
+                      r="18"
+                    />
+                    <path
+                      class="icon__shape"
+                      d="M35.698 22.242a5.68 5.68 0 0 1-1.701.493A3.122 3.122 0 0 0 35.3 21a5.726 5.726 0 0 1-1.881.761 2.916 2.916 0 0 0-1.681-.953 2.82 2.82 0 0 0-1.881.33 3.073 3.073 0 0 0-1.302 1.474 3.307 3.307 0 0 0-.184 2.01 8.047 8.047 0 0 1-3.382-.952 8.52 8.52 0 0 1-2.724-2.326 3.269 3.269 0 0 0-.4 1.577c0 1.088.522 2.049 1.317 2.611-.47-.015-.93-.15-1.342-.392v.039c0 .724.237 1.426.67 1.987a2.94 2.94 0 0 0 1.707 1.089 2.822 2.822 0 0 1-1.339.054 3.14 3.14 0 0 0 1.054 1.559c.496.39 1.095.607 1.713.62a5.83 5.83 0 0 1-2.07 1.111 5.628 5.628 0 0 1-2.315.187 8.044 8.044 0 0 0 4.54 1.41c5.45 0 8.43-4.78 8.43-8.925 0-.135-.004-.271-.01-.405a6.227 6.227 0 0 0 1.479-1.623v-.001Z"
+                    />
+                    <clipPath id="b">
+                      <path d="M20 18h17v18H20z" />
+                    </clipPath>
+                  </svg>
+                </a>
+
+                <a href="#" class="social__link" aria-label="Instagram">
+                  <svg class="icon" viewBox="0 0 56 56">
+                    <circle
+                      class="icon__bg --social-shadow"
+                      cx="28"
+                      cy="27"
+                      r="18"
+                    />
+                    <path
+                      class="icon__shape"
+                      d="M28 19.5c2.038 0 2.292.008 3.091.045.8.037 1.343.163 1.822.349.495.19.912.448 1.329.865.38.374.676.828.864 1.328.185.478.311 1.023.349 1.822.035.799.045 1.053.045 3.091 0 2.038-.008 2.292-.045 3.091-.038.8-.163 1.343-.349 1.822-.188.5-.483.954-.864 1.329a3.687 3.687 0 0 1-1.33.864c-.477.185-1.022.311-1.82.349-.8.035-1.054.045-3.092.045-2.038 0-2.292-.008-3.091-.045-.8-.038-1.343-.163-1.822-.349a3.667 3.667 0 0 1-1.328-.864 3.678 3.678 0 0 1-.865-1.33c-.186-.477-.311-1.022-.349-1.82-.035-.8-.045-1.054-.045-3.092 0-2.038.008-2.292.045-3.091.037-.8.163-1.343.349-1.822.187-.5.483-.954.865-1.328a3.672 3.672 0 0 1 1.328-.865c.479-.186 1.022-.311 1.822-.349.799-.035 1.053-.045 3.091-.045Zm0 3.75a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm4.875-.188a.938.938 0 1 0-1.875 0 .938.938 0 0 0 1.875 0ZM28 24.75a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5Z"
+                    />
+                    <clipPath id="b">
+                      <path d="M19 18h18v18H19z" />
+                    </clipPath>
+                  </svg>
+                </a>
+
+                <a href="#" class="social__link" aria-label="Youtobe">
+                  <svg class="icon" viewBox="0 0 56 56">
+                    <circle
+                      class="icon__bg --social-shadow"
+                      cx="28"
+                      cy="27"
+                      r="18"
+                    />
+                    <g clip-path="url(#b)">
+                      <path
+                        class="icon__shape"
+                        d="M35.26 22.873c.323 1.337.323 4.127.323 4.127s0 2.79-.323 4.127c-.18.738-.707 1.32-1.373 1.516C32.677 33 28.5 33 28.5 33s-4.174 0-5.387-.357c-.67-.2-1.195-.78-1.373-1.517-.323-1.336-.323-4.126-.323-4.126s0-2.79.323-4.127c.18-.738.707-1.32 1.373-1.516C24.326 21 28.5 21 28.5 21s4.176 0 5.387.357c.67.2 1.195.78 1.373 1.517Zm-8.177 6.752L31.333 27l-4.25-2.625v5.25Z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="--wrap --colorfool">
+              <h3 class="post-card__title">Subscribe today</h3>
+              <p class="post-card__excerpt">
+                Lorem ipsum dolor sit am consectetur adipisc ing elit. In sed et
+                donec purus viverra. Sit justo
+              </p>
+              <form class="form" action="">
+                <input
+                  class="form__input"
+                  type="text"
+                  name="fullName"
+                  placeholder="Full Name"
+                />
+                <input
+                  class="form__input"
+                  type="text"
+                  name="email"
+                  placeholder="Your email"
+                />
+                <div class="form__checkbox">
+                  <input name="privacy" type="checkbox" id="privacy" />
+                  <label for="privacy"
+                    >You agree to our company privacy policy</label
+                  >
+                </div>
+                <button class="form__btn-submiy" type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+
+            <div class="--wrap">
+              <h3>Tags</h3>
+              <div class="latest-posts__tags">
+                <a href="">Travel website</a><a href="">Travel tips</a
+                ><a href="">Travel trick</a> <a href="">Travel website</a
+                ><a href="">Travel tips</a><a href="">Travel trick</a>
+                <a href="">Travel website</a><a href="">Travel tips</a
+                ><a href="">Travel trick</a> <a href="">Travel website</a
+                ><a href="">Travel tips</a><a href="">Travel trick</a>
+                <a href="">Travel website</a><a href="">Travel tips</a
+                ><a href="">Travel trick</a> <a href="">Travel website</a
+                ><a href="">Travel tips</a><a href="">Travel trick</a>
+              </div>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
 
+    <!-- World's Best Places to Visit -->
     <section class="destinations">
       <h2 class="section-title">World's Best Places to Visit</h2>
+      <div class="destinations__img">
+        <img src="./img/destinations/map.jpg" alt="" />
+      </div>
     </section>
 
-    <section class="solo-trips">
+    <!-- video-section -->
+    <section class="video-section">
       <h2 class="section-title">Trips For your first solo traveling</h2>
+      <video
+        class="video-section__video"
+        src="./img/-motion_4__Image__1_Attachmnt_seed1601628840515442634.mp4"
+      ></video>
     </section>
 
+    <!-- social-media -->
     <section class="social-media">
-      <h2 class="section-title">Follow me Instagram</h2>
+      <div class="container">
+        <h2 class="section-title">Follow me Instagram</h2>
+        <a href="#">@designhunterrbd</a>
+        <div class="slider">
+          <div class="slider__item">
+            <img
+              src="./img/categories/mount.jpg"
+              class="slider__item-img"
+              alt="mount"
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              src="./img/categories/old-city.jpg"
+              class="slider__item-img"
+              alt="old-city"
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              src="./img/categories/osean.jpg"
+              class="slider__item-img"
+              alt="osean."
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              src="./img/categories/road.jpg"
+              class="slider__item-img"
+              alt="road"
+            />
+          </div>
+          <div class="slider__item">
+            <img
+              src="./img/categories/solo.jpg"
+              class="slider__item-img"
+              alt="solo"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer class="footer"></footer>
+    <!-- footer -->
+    <footer class="footer">
+      <div>2020 ojjomedia All Right Reserved</div>
+      <div>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#home">Contact</a></li>
+          <li class="header__menu-item"><a href="#home">Privacy</a></li>
+          <li class="header__menu-item"><a href="#home">Terms</a></li>
+          <li class="header__menu-item"><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <a href="#" class="social__link" aria-label="Facebook">
+          <svg class="icon" viewBox="0 0 56 56">
+            <circle class="icon__bg" cx="28" cy="27" r="18" />
+            <path
+              class="icon__shape"
+              d="M29.917 28.125h1.77l.709-3h-2.48v-1.5c0-.773 0-1.5 1.417-1.5h1.063v-2.52a18.866 18.866 0 0 0-2.024-.105c-1.923 0-3.289 1.243-3.289 3.525v2.1h-2.125v3h2.125V34.5h2.834v-6.375Z"
+            />
+          </svg>
+        </a>
+
+        <a href="#" class="social__link" aria-label="Twitter">
+          <svg class="icon" viewBox="0 0 56 56">
+            <circle class="icon__bg" cx="28" cy="27" r="18" />
+            <path
+              class="icon__shape"
+              d="M35.698 22.242a5.68 5.68 0 0 1-1.701.493A3.122 3.122 0 0 0 35.3 21a5.726 5.726 0 0 1-1.881.761 2.916 2.916 0 0 0-1.681-.953 2.82 2.82 0 0 0-1.881.33 3.073 3.073 0 0 0-1.302 1.474 3.307 3.307 0 0 0-.184 2.01 8.047 8.047 0 0 1-3.382-.952 8.52 8.52 0 0 1-2.724-2.326 3.269 3.269 0 0 0-.4 1.577c0 1.088.522 2.049 1.317 2.611-.47-.015-.93-.15-1.342-.392v.039c0 .724.237 1.426.67 1.987a2.94 2.94 0 0 0 1.707 1.089 2.822 2.822 0 0 1-1.339.054 3.14 3.14 0 0 0 1.054 1.559c.496.39 1.095.607 1.713.62a5.83 5.83 0 0 1-2.07 1.111 5.628 5.628 0 0 1-2.315.187 8.044 8.044 0 0 0 4.54 1.41c5.45 0 8.43-4.78 8.43-8.925 0-.135-.004-.271-.01-.405a6.227 6.227 0 0 0 1.479-1.623v-.001Z"
+            />
+            <clipPath id="b">
+              <path d="M20 18h17v18H20z" />
+            </clipPath>
+          </svg>
+        </a>
+
+        <a href="#" class="social__link" aria-label="Instagram">
+          <svg class="icon" viewBox="0 0 56 56">
+            <circle class="icon__bg" cx="28" cy="27" r="18" />
+            <path
+              class="icon__shape"
+              d="M28 19.5c2.038 0 2.292.008 3.091.045.8.037 1.343.163 1.822.349.495.19.912.448 1.329.865.38.374.676.828.864 1.328.185.478.311 1.023.349 1.822.035.799.045 1.053.045 3.091 0 2.038-.008 2.292-.045 3.091-.038.8-.163 1.343-.349 1.822-.188.5-.483.954-.864 1.329a3.687 3.687 0 0 1-1.33.864c-.477.185-1.022.311-1.82.349-.8.035-1.054.045-3.092.045-2.038 0-2.292-.008-3.091-.045-.8-.038-1.343-.163-1.822-.349a3.667 3.667 0 0 1-1.328-.864 3.678 3.678 0 0 1-.865-1.33c-.186-.477-.311-1.022-.349-1.82-.035-.8-.045-1.054-.045-3.092 0-2.038.008-2.292.045-3.091.037-.8.163-1.343.349-1.822.187-.5.483-.954.865-1.328a3.672 3.672 0 0 1 1.328-.865c.479-.186 1.022-.311 1.822-.349.799-.035 1.053-.045 3.091-.045Zm0 3.75a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm4.875-.188a.938.938 0 1 0-1.875 0 .938.938 0 0 0 1.875 0ZM28 24.75a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5Z"
+            />
+            <clipPath id="b">
+              <path d="M19 18h18v18H19z" />
+            </clipPath>
+          </svg>
+        </a>
+
+        <a href="#" class="social__link" aria-label="Youtobe">
+          <svg class="icon" viewBox="0 0 56 56">
+            <circle class="icon__bg" cx="28" cy="27" r="18" />
+            <g clip-path="url(#b)">
+              <path
+                class="icon__shape"
+                d="M35.26 22.873c.323 1.337.323 4.127.323 4.127s0 2.79-.323 4.127c-.18.738-.707 1.32-1.373 1.516C32.677 33 28.5 33 28.5 33s-4.174 0-5.387-.357c-.67-.2-1.195-.78-1.373-1.517-.323-1.336-.323-4.126-.323-4.126s0-2.79.323-4.127c.18-.738.707-1.32 1.373-1.516C24.326 21 28.5 21 28.5 21s4.176 0 5.387.357c.67.2 1.195.78 1.373 1.517Zm-8.177 6.752L31.333 27l-4.25-2.625v5.25Z"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,10 +1,15 @@
 @import url("../fonts/fonts.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css");
-@import url("./hero.css");
+@import url("./header.css");
 @import url("./categories.css");
+@import url("./featured.css");
+@import url("./latest-posts.css");
+@import url("./destinations.css");
+@import url("./video-section.css");
+@import url("./footer.css");
 
 :root {
-  --white: white;
+  --white: white; /* --general-text-color */
   --text-color-main: #ffa902;
 }
 
@@ -15,17 +20,47 @@
   font-weight: 400;
 }
 
-/* .container {
+.container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
-} */
+}
 
 .wrapper {
   display: flex;
   flex-direction: column;
 }
 
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+}
+
+.social {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.social__link:hover .icon__bg {
+  fill: #ffa902;
+}
+
+.social__link:hover .icon__shape {
+  fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  /* tablet */
+}
+
 @media (min-width: 1024px) {
+  /* desktop */
+}
+
+@media (min-width: 1280px) {
+  /* large desktop */
 }

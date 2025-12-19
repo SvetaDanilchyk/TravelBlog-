@@ -1,0 +1,205 @@
+/* header-top */
+.header {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/header/woman-traveler-with-backpack-walking-yasaka-pagoda-sannen-zaka-street-kyoto-japan\ 1.png")
+    center / cover no-repeat;
+  color: var(--white);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header__top {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 0.75fr;
+  padding: 24px 0;
+}
+
+.header__logo {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--white);
+}
+.header__logo-text {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.--accent {
+  color: var(--text-color-main);
+}
+
+.header__search {
+  display: grid;
+  position: relative;
+}
+
+input[type="search"] {
+  align-self: center;
+  width: 100%;
+  height: 53px;
+  border: 2px solid #868383;
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 15px;
+  font-weight: 300;
+  font-size: 16px;
+  background-image: url("../img/icons/loupa.svg");
+  background-position: 12px 15px;
+  background-repeat: no-repeat;
+}
+
+/*
+убрать крестик очистки
+ input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	-webkit-appearance:none;
+} */
+
+.header__search-loupa {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  padding-left: 24px;
+}
+
+.menu__hamburger {
+  display: grid;
+  list-style-type: none;
+  padding: 0;
+  align-content: space-evenly;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.menu__hamburger:hover .menu__hamburger-item {
+  box-shadow: 5px 2px 7px #000000;
+}
+
+.menu__hamburger-item {
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+}
+
+.icon__bg {
+  fill: #ffffff;
+  transition: fill 0.3s;
+}
+
+.icon__shape {
+  fill: #696969;
+  transition: fill 0.3s;
+}
+
+hr {
+  opacity: 0.6;
+}
+.header__nav {
+  margin-top: 24px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-item {
+  list-style-type: none;
+  position: relative;
+  font-size: 20px;
+}
+
+.header__menu-item a {
+  color: var(--white);
+  text-decoration: none;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #696969;
+}
+
+.header__menu-item a:hover .submenu {
+  color: #ffa902;
+  display: block;
+}
+
+.hero {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.hero__title {
+  display: flex;
+  font-weight: 600;
+  font-size: 64px;
+  justify-content: center;
+}
+
+.hero__text {
+  margin: 0 auto;
+  margin-top: 28px;
+  font-size: 16px;
+  max-width: 865px;
+  text-align: center;
+}
+
+.hero__cta {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 28px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffa902;
+}
+.hero__cta:hover {
+  color: #c28204;
+  transition: color 0.3s;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  input[type="search"] {
+    font-size: 18px;
+  }
+
+  .header__nav {
+    max-width: 789px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    margin-top: 224px;
+  }
+
+  .hero__title {
+    font-size: 75px;
+  }
+}
+/* desktop */
+@media (min-width: 1024px) {
+}
+/* large desktop */
+@media (min-width: 1280px) {
+}

@@ -1,3 +1,41 @@
 .categories {
-  height: 393px;
+}
+
+.slider {
+  display: grid;
+  row-gap: 24px;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.slider__item {
+  height: 30vh;
+}
+
+.slider__item > img {
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.slider__arrow-prev {
+  position: absolute;
+  left: 0;
+  margin-top: 25%;
+}
+
+.slider__arrow-next {
+  position: absolute;
+  right: 0;
+  margin-top: 25%;
+}
+/* tablet */
+@media (min-width: 768px) {
+}
+/* desktop */
+@media (min-width: 1024px) {
+}
+/* large desktop */
+@media (min-width: 1280px) {
 }

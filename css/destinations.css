@@ -1,0 +1,11 @@
+.destinations {
+}
+
+.destinations__img {
+  background-image: url("../img/destinations/map.jpg");
+  background-repeat: no-repeat;
+}
+
+.destinations__img > img {
+  width: 100%;
+}

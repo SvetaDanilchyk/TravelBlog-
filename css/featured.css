@@ -1,0 +1,48 @@
+.featured__list {
+  display: grid;
+}
+
+.post-card {
+  display: grid;
+}
+
+.post-card__title {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.post-card__excerpt {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.post-card__meta {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.post-card__image > img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+}
+
+.number > svg {
+  width: 10px;
+  height: 10px;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+}
+/* desktop */
+@media (min-width: 1024px) {
+}
+/* large desktop */
+@media (min-width: 1280px) {
+}
