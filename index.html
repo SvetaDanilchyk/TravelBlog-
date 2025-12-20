@@ -30,7 +30,23 @@
             <li class="menu__hamburger-item"></li>
           </ul>
 
-          <!--  <div class="social">
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close">close</button>
+            <ul class="header__menu">
+            <li class="header__menu-item"><a href="#home">Home</a></li>
+            <li class="header__menu-item">
+              <a href="#about">About Me</a>
+              <ul class="submenu">
+                <li><a href="#story">My story</a></li>
+                <li><a href="#experience">Experience</a></li>
+              </ul>
+            </li>
+            <li class="header__menu-item"><a href="#home">Category</a></li>
+            <li class="header__menu-item"><a href="#home">Blog</a></li>
+            <li class="header__menu-item"><a href="#home">Contact Me</a></li>
+          </ul>
+
+          <div class="social">
             <a href="#" class="social__link" aria-label="Facebook">
               <svg class="icon" viewBox="0 0 56 56">
                 <circle class="icon__bg" cx="28" cy="27" r="18" />
@@ -78,7 +94,10 @@
                 </g>
               </svg>
             </a>
-          </div> -->
+          </div>
+          </div>
+
+          
         </div>
 
         <hr />
@@ -119,7 +138,7 @@
       <div class="container">
         <h2 class="section-title">Choose a category</h2>
 
-        <div class="slider">
+        <div id="category" class="slider">
           <div class="slider__arrow-prev" data-slide="prev">
             <svg
               width="42"
@@ -135,21 +154,14 @@
             </svg>
           </div>
 
-          <div class="slider__item">
+          <!-- <div class="slider__item">
             <img
               src="./img/categories/jungal.jpg"
               class="slider__item-img"
               alt="jungal"
             />
-          </div>
-          <div class="slider__item">
-            <img
-              src="./img/categories/mount.jpg"
-              class="slider__item-img"
-              alt="mount"
-            />
-          </div>
-
+          </div> -->
+          
           <div class="slider__arrow-next" data-slide="next">
             <svg
               width="42"
@@ -502,5 +514,7 @@
         </a>
       </div>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

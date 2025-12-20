@@ -43,6 +43,7 @@
 .social {
   display: grid;
   grid-auto-flow: column;
+  box-shadow: 0px -15px 20px 0 #e1e1e1;
 }
 
 .social__link:hover .icon__bg {

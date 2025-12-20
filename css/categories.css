@@ -10,7 +10,7 @@
 }
 
 .slider__item {
-  height: 30vh;
+  height: 90vh;
 }
 
 .slider__item > img {
@@ -21,17 +21,23 @@
 
 .slider__arrow-prev {
   position: absolute;
-  left: 0;
-  margin-top: 25%;
+  left: 25px;
+  margin-top: 50%;
 }
 
 .slider__arrow-next {
   position: absolute;
-  right: 0;
-  margin-top: 25%;
+  right: 25px;
+  margin-top: 50%;
 }
 /* tablet */
 @media (min-width: 768px) {
+  .slider {
+  grid-template-columns: repeat(3, 1fr);
+}
+.slider__item {
+  height: 170px;
+}
 }
 /* desktop */
 @media (min-width: 1024px) {
