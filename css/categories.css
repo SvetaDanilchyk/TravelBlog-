@@ -33,11 +33,11 @@
 /* tablet */
 @media (min-width: 768px) {
   .slider {
-  grid-template-columns: repeat(3, 1fr);
-}
-.slider__item {
-  height: 170px;
-}
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .slider__item {
+    height: 170px;
+  }
 }
 /* desktop */
 @media (min-width: 1024px) {

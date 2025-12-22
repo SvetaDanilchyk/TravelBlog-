@@ -42,6 +42,9 @@
 }
 /* desktop */
 @media (min-width: 1024px) {
+  #featured-slider {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 /* large desktop */
 @media (min-width: 1280px) {

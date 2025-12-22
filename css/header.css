@@ -117,7 +117,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 80vh;
   background: #ffffff;
   box-shadow: 0 0 10px 0 #ffffff;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .mobile-menu__btn-close {
@@ -129,7 +129,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .header__menu {
   display: grid;
   margin-top: 50px;
-  height: 80%;  
+  height: 80%;
   /* 
   transform: translate3d(0, 0, 0); */
 }
@@ -152,7 +152,7 @@ hr {
   opacity: 0.6;
 }
 .header__nav {
-  display:none;
+  display: none;
   margin-top: 24px;
 }
 

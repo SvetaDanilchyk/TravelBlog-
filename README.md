@@ -26,27 +26,27 @@ The social media icons are implemented as a separate reusable component and used
 
 travel-blog/
 ├── css/
-│   ├── categories.css
-│   ├── destinations.css
-│   ├── featured.css
-│   ├── footer.css
-│   ├── header.css
-│   ├── latest-posts.css
-│   ├── video-section.css
-│   └── style.css
+│ ├── categories.css
+│ ├── destinations.css
+│ ├── featured.css
+│ ├── footer.css
+│ ├── header.css
+│ ├── latest-posts.css
+│ ├── video-section.css
+│ └── style.css
 ├── fonts/
-│   └── fonts.css
+│ └── fonts.css
 ├── img/
-│   ├── categories/
-│   ├── featured/
-│   ├── destinations/
-│   ├── social/
-│   ├── video/
-│   ├── latest/
-│   ├── header/
-│   └── icons/
+│ ├── categories/
+│ ├── featured/
+│ ├── destinations/
+│ ├── social/
+│ ├── video/
+│ ├── latest/
+│ ├── header/
+│ └── icons/
 ├── js/
-│   └── main.js
+│ └── main.js
 ├── index.html
 ├── package.json
 ├── package-lock.json

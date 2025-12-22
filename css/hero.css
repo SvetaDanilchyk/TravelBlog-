@@ -142,7 +142,6 @@ hr {
   display: block;
 }
 
-
 /* 
 li > ul {
   display: none;
@@ -163,7 +162,7 @@ li > ul {
 .header__text {
   margin: 0 auto;
   margin-top: 28px;
-  font-size: 16px;  
+  font-size: 16px;
   max-width: 865px;
   text-align: center;
 }
